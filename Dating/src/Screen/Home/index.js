@@ -7,11 +7,19 @@ import {
   FlatList,
   ActivityIndicator,
   RefreshControl,
+  StyleSheet,
 } from 'react-native';
 import commonStyle from '../Style/style';
+import {SCREEN_HEIGHT, SCREEN_WIDTH} from '../../utils/constants';
+import ImageView from '../../components/imageView';
 
 const Home = props => {
-  const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+  // const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+  // const apiUrl =
+  //   'https://serpapi.com/search.json?q=Apple&engine=google_images&ijn=0';
+  // const apiUrl = 'https://picsum.photos/v2/list';
+
+  const apiUrl = 'https://jsonplaceholder.typicode.com/photos';
   const itemsPerPage = 5;
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -72,9 +80,20 @@ const Home = props => {
 
       return (
         <TouchableOpacity style={styles.itemContainer}>
-          <Text style={styles.itemTitle}>{item.userId}</Text>
+          <Text style={styles.itemTitle}>{index}</Text>
           <Text style={styles.itemTitle}>{item.title}</Text>
           <Text style={styles.itemBody}>{item.body}</Text>
+          <View style={{}}>
+            <ImageView
+              uri={item?.url || null}
+              style={{
+                height: 200,
+                width: SCREEN_WIDTH - 40,
+                borderRadius: 10,
+              }}
+              resizeMode={'cover'}
+            />
+          </View>
         </TouchableOpacity>
       );
     },
@@ -92,10 +111,30 @@ const Home = props => {
             <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
           }
           onEndReached={onEndReached}
-          onEndReachedThreshold={0.5}
+          onEndReachedThreshold={0.1}
+          ListEmptyComponent={
+            <View
+              style={{
+                height: SCREEN_HEIGHT,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Text style={{color: 'black'}}>NO DATA FOUND</Text>
+            </View>
+          }
         />
-        {loading && <ActivityIndicator size={'large'} color={'#0000ff'} />}
-        {error && (
+        {loading && (
+          <ActivityIndicator
+            style={{
+              ...StyleSheet.absoluteFillObject,
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+            size={'large'}
+            color={'#0000ff'}
+          />
+        )}
+        {!error && (
           <View style={styles.errorContainer}>
             <Text style={styles.errorText}>{error}</Text>
           </View>
@@ -109,15 +148,17 @@ const styles = {
   itemContainer: {
     backgroundColor: '#f9f9f9',
     padding: 10,
-    marginVertical: 5,
+    // marginVertical: 5,
     borderRadius: 8,
     elevation: 2,
+    margin: 10,
   },
   itemTitle: {
     fontSize: 18,
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 5,
+    textTransform: 'uppercase',
   },
   itemBody: {
     fontSize: 16,
@@ -130,7 +171,7 @@ const styles = {
     borderRadius: 8,
   },
   errorText: {
-    color: 'white',
+    color: 'black',
     fontSize: 16,
     textAlign: 'center',
   },
