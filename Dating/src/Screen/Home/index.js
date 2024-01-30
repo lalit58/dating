@@ -102,6 +102,16 @@ const Home = props => {
 
   return (
     <SafeAreaView style={commonStyle.safeView}>
+      <TouchableOpacity
+        onPress={() => props.navigation.push('map')}
+        style={{
+          backgroundColor: 'red',
+          margin: 10,
+          padding: 10,
+          borderRadius: 10,
+        }}>
+        <Text style={{color: 'white'}}>Go To Map Section</Text>
+      </TouchableOpacity>
       <View style={commonStyle.container}>
         <FlatList
           data={posts}
