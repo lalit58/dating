@@ -1,0 +1,94 @@
+export const HedvigLettersSerif_14ptRegular = "HedvigLettersSerif_14pt-Regular";
+export const HedvigLettersSerif_18ptRegular = "HedvigLettersSerif_18pt-Regular";
+export const MontserratBlack = "Montserrat-Black";
+export const MontserratBlackItalic = "Montserrat-BlackItalic";
+export const MontserratBold = "Montserrat-Bold";
+export const MontserratBoldItalic = "Montserrat-BoldItalic";
+export const MontserratExtraBold = "Montserrat-ExtraBold";
+export const MontserratExtraBoldItalic = "Montserrat-ExtraBoldItalic";
+export const MontserratExtraLight = "Montserrat-ExtraLight";
+export const MontserratExtraLightItalic = "Montserrat-ExtraLightItalic";
+export const MontserratItalic = "Montserrat-Italic";
+export const MontserratLight = "Montserrat-Light";
+export const MontserratLightItalic = "Montserrat-LightItalic";
+export const MontserratMedium = "Montserrat-Medium";
+export const MontserratMediumItalic = "Montserrat-MediumItalic";
+export const MontserratRegular = "Montserrat-Regular";
+export const MontserratSemiBold = "Montserrat-SemiBold";
+export const MontserratSemiBoldItalic = "Montserrat-SemiBoldItalic";
+export const MontserratThin = "Montserrat-Thin";
+export const MontserratThinItalic = "Montserrat-ThinItalic";
+export const OpenSansBold = "OpenSans-Bold";
+export const OpenSansBoldItalic = "OpenSans-BoldItalic";
+export const OpenSansCondensedBold = "OpenSans_Condensed-Bold";
+export const OpenSansCondensedBoldItalic = "OpenSans_Condensed-BoldItalic";
+export const OpenSansCondensedExtraBold = "OpenSans_Condensed-ExtraBold";
+export const OpenSansCondensedExtraBoldItalic =
+  "OpenSans_Condensed-ExtraBoldItalic";
+export const OpenSansCondensedItalic = "OpenSans_Condensed-Italic";
+export const OpenSansCondensedLight = "OpenSans_Condensed-Light";
+export const OpenSansCondensedLightItalic = "OpenSans_Condensed-LightItalic";
+export const OpenSansCondensedMedium = "OpenSans_Condensed-Medium";
+export const OpenSansCondensedMediumItalic = "OpenSans_Condensed-MediumItalic";
+export const OpenSansCondensedRegular = "OpenSans_Condensed-Regular";
+export const OpenSansCondensedSemiBold = "OpenSans_Condensed-SemiBold";
+export const OpenSansCondensedSemiBoldItalic =
+  "OpenSans_Condensed-SemiBoldItalic";
+export const OpenSansExtraBold = "OpenSans-ExtraBold";
+export const OpenSansExtraBoldItalic = "OpenSans-ExtraBoldItalic";
+export const OpenSansItalic = "OpenSans-Italic";
+export const OpenSansLight = "OpenSans-Light";
+export const OpenSansLightItalic = "OpenSans-LightItalic";
+export const OpenSansMedium = "OpenSans-Medium";
+export const OpenSansMediumItalic = "OpenSans-MediumItalic";
+export const OpenSansRegular = "OpenSans-Regular";
+export const OpenSansSemiBold = "OpenSans-SemiBold";
+export const OpenSansSemiBoldItalic = "OpenSans-SemiBoldItalic";
+export const OpenSansSemiCondensedBold = "OpenSans_SemiCondensed-Bold";
+export const OpenSansSemiCondensedBoldItalic =
+  "OpenSans_SemiCondensed-BoldItalic";
+export const OpenSansSemiCondensedExtraBold =
+  "OpenSans_SemiCondensed-ExtraBold";
+export const OpenSansSemiCondensedExtraBoldItalic =
+  "OpenSans_SemiCondensed-ExtraBoldItalic";
+export const OpenSansSemiCondensedItalic = "OpenSans_SemiCondensed-Italic";
+export const OpenSansSemiCondensedLight = "OpenSans_SemiCondensed-Light";
+export const OpenSansSemiCondensedLightItalic =
+  "OpenSans_SemiCondensed-LightItalic";
+export const OpenSansSemiCondensedMedium = "OpenSans_SemiCondensed-Medium";
+export const OpenSansSemiCondensedMediumItalic =
+  "OpenSans_SemiCondensed-MediumItalic";
+export const OpenSansSemiCondensedRegular = "OpenSans_SemiCondensed-Regular";
+export const OpenSansSemiCondensedSemiBold = "OpenSans_SemiCondensed-SemiBold";
+export const OpenSansSemiCondensedSemiBoldItalic =
+  "OpenSans_SemiCondensed-SemiBoldItalic";
+export const RobotoBlack = "Roboto-Black";
+export const RobotoBlackItalic = "Roboto-BlackItalic";
+export const RobotoBold = "Roboto-Bold";
+export const RobotoBoldItalic = "Roboto-BoldItalic";
+export const RobotoItalic = "Roboto-Italic";
+export const RobotoLight = "Roboto-Light";
+export const RobotoLightItalic = "Roboto-LightItalic";
+export const RobotoMedium = "Roboto-Medium";
+export const RobotoMediumItalic = "Roboto-MediumItalic";
+export const RobotoRegular = "Roboto-Regular";
+export const RobotoThin = "Roboto-Thin";
+export const RobotoThinItalic = "Roboto-ThinItalic";
+export const PoppinsBlack = "Poppins-Black";
+export const PoppinsBlackItalic = "Poppins-BlackItalic";
+export const PoppinsBold = "Poppins-Bold";
+export const PoppinsBoldItalic = "Poppins-BoldItalic";
+export const PoppinsExtraBold = "Poppins-ExtraBold";
+export const PoppinsExtraBoldItalic = "Poppins-ExtraBoldItalic";
+export const PoppinsExtraLight = "Poppins-ExtraLight";
+export const PoppinsExtraLightItalic = "Poppins-ExtraLightItalic";
+export const PoppinsItalic = "Poppins-Italic";
+export const PoppinsLight = "Poppins-Light";
+export const PoppinsLightItalic = "Poppins-LightItalic";
+export const PoppinsMedium = "Poppins-Medium";
+export const PoppinsMediumItalic = "Poppins-MediumItalic";
+export const PoppinsRegular = "Poppins-Regular";
+export const PoppinsSemiBold = "Poppins-SemiBold";
+export const PoppinsSemiBoldItalic = "Poppins-SemiBoldItalic";
+export const PoppinsThin = "Poppins-Thin";
+export const PoppinsThinItalic = "Poppins-ThinItalic";
